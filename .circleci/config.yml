@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  test:
+    steps:
+      - run: ./test.sh
+
+workflows:
+  version: 2
+  default_workflow:
+    jobs:
+      - test
